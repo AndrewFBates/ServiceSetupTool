@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the Welcome Page for the service setup guide -->
+<head>
+    <!-- Generic head data -->
+    <meta charset="UTF-8">
+    <meta name="description" content="GUI for the service setup guide application.">
+    <meta name="author" content="Andrew Bates">
+    <meta name="keywords" content="service, setup, guide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
+    <title>Connection Testing</title>
+</head>
+
+
+<body>
+    <!-- Title -->
+    <h3>Service Connectivity Test </h3>
+<p>This service setup tool uses the Powershell command <a href="https://docs.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=win10-ps">Test-NetConnection</a>.
+    This command attempts to create a full TCP
+    connection to the target IP (your global IP address in this case) and port. If successful, it  shows that your
+    service is available to connect to via the internet. If your service is using UDP, the connection will fail. To get
+    around this, a second test is done after your local machine creates a TCP port on the same port as your service.
+    Assuming both UDP and TCP ports are forwarded, this test will work. The Test-NetConnection command can also provide
+    additional information (such as if the target responds to pings, or your source interface.) </p>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the Welcome Page for the service setup guide -->
+<head>
+    <!-- Generic head data -->
+    <meta charset="UTF-8">
+    <meta name="description" content="GUI for the service setup guide application.">
+    <meta name="author" content="Andrew Bates">
+    <meta name="keywords" content="service, setup, guide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
+    <title>Network Traffic Explanation</title>
+</head>
+
+
+<body>
+    <!-- Title -->
+    <h3>Network Traffic Overview</h3>
+    <p>All internet traffic has a source and destination, <a href="https://en.wikipedia.org/wiki/IPv4">and Internet
+        Protocol (IP)</a> is how computers keep track of senders and receivers. Every device needs a unique address in
+        order to receive <a href="https://en.wikipedia.org/wiki/Network_packet">packets</a> (data at the network
+        level). However because IPv4 address are limited, often whole networks share 1 IP address that the outside world
+        can communicate with (your global IP address). Within these networks each computer still has a unique address
+        (your local IP address). To communicate to the outside world, your router (which is also your default gateway’s
+        IP address) uses <a href="https://en.wikipedia.org/wiki/Network_address_translation">Network Address Translation
+            (NAT)</a>. Nat Overload keeps track of connections via port, and hides your local computer from the outside
+        world. If someone wants to start a connection to your machine, your router must allow it through
+        <a href="https://en.wikipedia.org/wiki/Port_forwarding">port-forwarding</a>. Port-forwarding takes incoming
+        traffic, and sends it to your local machine based on the destination port. Potentially, someone can exploit this
+        to get onto your network, so it is recommended you only leave port-forwarding on when you are using it. You can
+        find your router's default login and password <a href="https://www.softwaretestinghelp.com/default-router-username-and-password-list/">here</a></p>
+</body>
+</html>
